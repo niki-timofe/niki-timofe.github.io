@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Этому интеренету нужен новый герой</title>
+    <!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">-->
+    <style>
+        html, body {
+            height: 100%;
+            color: whitesmoke;
+            font-family: "PT Sans", sans-serif;
+        }
+
+        body, div.wrapper {
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        body {
+            width: 75%;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("acidforest.jpg") center / cover;
+        }
+
+        div.wrapper {
+            width: 100%;
+        }
+
+        header {
+            margin-top: 0.5em;
+            align-self: flex-start;
+            width: 50%;
+            text-align: right;
+            padding-right: 15px;
+        }
+
+        i.vertical-line {
+            height: 350px;
+            margin: 0 auto;
+            border: thin solid whitesmoke;
+            clear: both;
+        }
+
+        aside {
+            
+            padding-left: 15px;
+            align-self: center;
+        }
+
+        ul.icn {
+            list-style: none;
+            padding-left: 10px;
+        }
+
+        ul.icn > li:before {
+            font-family: "FontAwesome";
+            padding-right:7px;
+        }
+
+        li.phone:before {
+            content: "\f095";
+        }
+
+        li.twitter:before {
+            content: "\f099";
+        }
+
+        li.instagram:before {
+            content: "\f16d";
+        }
+
+        li {
+            line-height: 140%;
+        }
+
+        small {
+            font-size: 45%;
+            color: rgba(255, 255, 255, 0.4);
+            vertical-align: middle;
+        }
+
+        a {
+            color: whitesmoke;
+            text-decoration: none;
+            border-bottom: dashed 1px lightgrey;
+            margin-bottom: 5px;
+        }
+
+        a:hover {
+            background-color: whitesmoke;
+            color: rgba(0, 0, 0, 0.8);
+        }
+
+        #contact {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Оптимизируй. Действуй. Упрощай.</h1>
+            <p>Я художник, я так вижу.</p>
+        </header>
+        <i class="vertical-line"></i>
+        <aside>
+            <p>Так вот...</p>
+            <p>Часто <small>(нет)</small> бывают ситуации, для которых я сделал пару сайтов, где можно...</p>
+
+            <ul>
+                <li>
+                    <a href="https://isitdown.herokuapp.com" target="_blank">IsItDown?</a> — убедиться, что сайт не работает
+                    у всех.</li>
+                <li><a href="https://eapassgen.herokuapp.com" target="_blank">EaPassGen</a> — сгенерировать пароль, который легко
+                    запомнить.
+                </li>
+                <li><a href="https://imgstore.herokuapp.com" target="_blank">ImgStore</a> — загрузить картинку.</li>
+                <li><a href="https://shortenit.herokuapp.com" target="_blank">ShortenIt</a> — укоротить ссылку любой длины.</li>
+                <li><a href="https://clpbrd.herokuapp.com" target="_blank">ClpBrd</a> — легко перекидывать текст между устройствами.</li>
+                <li><a>...</a></li>
+            </ul>
+
+            <p id="contact"><small>Если тоже хочешь сайт, пиши на e-mail: <a href="mailto:niki-timofe@ya.ru">niki-timofe[at]ya.ru</a>,
+                либо ВК: <a href="http://vk.com/id8930220" target="_blank">@id8930220</a></small></p>
+        </aside>
+    </div>
+</body>
+
+</html>
