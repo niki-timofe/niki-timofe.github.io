@@ -52,8 +52,13 @@
             header {
                 float: right;
             }
-            i.vertical-line {
-                display: none;
+            .vertical-line {
+                transform: translateY(25px) !important;
+                height: 0 !important;
+                width: 100%;
+                display: inline-block;
+                vertical-align: text-top;
+                margin: auto;
             }
         }
 
@@ -91,7 +96,7 @@
             width: 100%;
         }
 
-        i.vertical-line {
+        .vertical-line {
             height: 40vmin;
             border: thin solid whitesmoke;
             align-self: flex-start;
@@ -201,7 +206,7 @@
             <h1>Оптимизируй. Действуй. Упрощай.</h1>
             <p id="caption">Я художник, я так вижу.</p>
         </header>
-        <i class="vertical-line"></i>
+        <div class="vertical-line"></div>
         <aside>
             <p>Так вот...</p>
             <p>Часто <small>(нет)</small> бывают ситуации, для которых я сделал пару сайтов, где можно...</p>
