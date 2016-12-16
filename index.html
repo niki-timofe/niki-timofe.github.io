@@ -60,9 +60,9 @@
         }
 
         body {
-            background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("acidforest.jpg") center / cover fixed;
-            background: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("acidforest.jpg") center / cover fixed;
-            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("acidforest.jpg") center / cover fixed;
+            background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)) fixed, url("acidforest.jpg") center / cover fixed;
+            background: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)) fixed, url("acidforest.jpg") center / cover fixed;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)) fixed, url("acidforest.jpg") center / cover fixed;
         }
 
 
@@ -75,10 +75,10 @@
         }
 
         i.vertical-line {
-            height: 25vmax;
-            margin: 0 auto;
+            height: 40vmin;
             border: thin solid whitesmoke;
-            clear: both;
+            align-self: flex-start;
+            transform: translateY(2em);
         }
 
         aside {
