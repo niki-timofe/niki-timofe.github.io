@@ -22,6 +22,15 @@
 
         }
 
+        @keyframes opascity {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
         html, body {
             height: 100%;
             color: whitesmoke;
@@ -59,6 +68,11 @@
             padding-right: 15px;
         }
 
+        header h1 {
+            opacity: 0;
+            animation: 1s opascity ease-out 2s forwards;
+        }
+
         body {
             background: fixed linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), fixed url("acidforest.jpg") center / cover;
         }
@@ -68,7 +82,6 @@
                 background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)) no-repeat / cover, url("acidforest.720.jpg") top center no-repeat;
             }
         }
-
 
         body {
             width: 75%;
@@ -83,12 +96,32 @@
             border: thin solid whitesmoke;
             align-self: flex-start;
             transform: translateY(2em);
+
+            opacity: 0;
+            animation: 0.2s opascity ease-out 1s 5 forwards alternate;
         }
 
         aside {
             padding-left: 15px;
             transform: translateY(1.5em);
             align-self: flex-start;
+            opacity: 0;
+            animation: 1s opascity ease-in 2s forwards;
+        }
+
+        ul li:nth-child(3n + 1) {
+            opacity: 0 !important;
+            animation: 0.3s opascity ease-in 4s forwards alternate !important;
+        }
+
+        ul li:nth-child(3n) {
+            opacity: 0 !important;
+            animation: 0.2s opascity ease-in 3s forwards alternate !important;
+        }
+
+        ul li:nth-child(3n - 1) {
+            opacity: 0 !important;
+            animation: 0.1s opascity ease-in 5s forwards alternate !important;
         }
 
         ul.icn {
@@ -123,11 +156,18 @@
             vertical-align: middle;
         }
 
+        small a {
+            color: rgba(255, 255, 255, 0.6);
+            border-bottom: dashed 1px rgba(255, 255, 255, 0.6);
+        }
+
         a {
             color: whitesmoke;
             text-decoration: none;
             border-bottom: dashed 1px lightgrey;
             margin-bottom: 5px;
+            transition: all 0.5s ease-out;
+            border-radius: 2px;
         }
 
         a:hover {
@@ -137,6 +177,20 @@
 
         #contact {
             text-align: right;
+            transition: all 0.1s ease-out;
+
+            opacity: 0;
+            animation: 0.1s opascity ease 5s forwards 3 alternate;
+        }
+
+        #contact:hover {
+            font-size: 145%;
+        }
+
+        #caption {
+            color: rgba(255, 255, 255, 0.6);
+            opacity: 0;
+            animation: 0.1s opascity ease-in 4s forwards 5 alternate;
         }
     </style>
 </head>
@@ -145,7 +199,7 @@
     <div class="wrapper">
         <header>
             <h1>Оптимизируй. Действуй. Упрощай.</h1>
-            <p>Я художник, я так вижу.</p>
+            <p id="caption">Я художник, я так вижу.</p>
         </header>
         <i class="vertical-line"></i>
         <aside>
@@ -155,13 +209,13 @@
             <ul>
                 <li>
                     <a href="https://isitdown.herokuapp.com" target="_blank">IsItDown?</a> — убедиться, что сайт не работает
-                    у всех.</li>
+                    у всех;</li>
                 <li><a href="https://eapassgen.herokuapp.com" target="_blank">EaPassGen</a> — сгенерировать пароль, который легко
-                    запомнить.
+                    запомнить;
                 </li>
-                <li><a href="https://imgstore.herokuapp.com" target="_blank">ImgStore</a> — загрузить картинку.</li>
-                <li><a href="https://shortenit.herokuapp.com" target="_blank">ShortenIt</a> — укоротить ссылку любой длины.</li>
-                <li><a href="https://clpbrd.herokuapp.com" target="_blank">ClpBrd</a> — легко перекидывать текст между устройствами.</li>
+                <li><a href="https://imgstore.herokuapp.com" target="_blank">ImgStore</a> — загрузить картинку;</li>
+                <li><a href="https://shortenit.herokuapp.com" target="_blank">ShortenIt</a> — укоротить ссылку любой длины;</li>
+                <li><a href="https://clpbrd.herokuapp.com" target="_blank">ClpBrd</a> — легко перекидывать текст между устройствами;</li>
                 <li><a>...</a></li>
             </ul>
 
