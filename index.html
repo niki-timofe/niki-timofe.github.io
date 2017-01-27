@@ -134,6 +134,21 @@
             animation: 0.1s opacity ease-in 5s forwards alternate !important;
         }
 
+        ul.more li:nth-child(3n + 1) {
+            opacity: 0;
+            animation: 0.3s opacity ease-in 0.2s forwards alternate !important;
+        }
+
+        ul.more li:nth-child(3n) {
+            opacity: 0;
+            animation: 0.2s opacity ease-in 0.1s forwards alternate !important;
+        }
+
+        ul.more li:nth-child(3n - 1) {
+            opacity: 0;
+            animation: 0.1s opacity ease-in 0.3s forwards alternate !important;
+        }
+
         ul.icn {
             list-style: none;
             padding-left: 10px;
@@ -198,6 +213,22 @@
             opacity: 0;
             animation: 0.1s opacity ease-in 4s forwards 5 alternate;
         }
+
+        details {
+            display: inline;
+        }
+
+        details[open] {
+            display: block;
+        }
+
+        summary {
+            display: block;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
     </style>
 </head>
 
@@ -218,19 +249,112 @@
         <ul>
             <li>
                 <a href="https://isitdown.herokuapp.com" target="_blank">IsItDown?</a> — убедиться, что сайт не работает
-                у всех;
+                у всех
+                <details>
+                    <summary><a>...</a></summary>
+                    <b>Технологии:</b>
+                    <ul class="more">
+                        <li>
+                            <a href="http://rubyonrails.org/">Rails</a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3.org/TR/html5/">HTML5</a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3.org/TR/CSS/">CSS3</a>
+                        </li>
+                        <li>
+                            <a href="https://jquery.com/">jQuery</a>
+                        </li>
+                    </ul>
+                </details>
             </li>
-            <li><a href="https://eapassgen.herokuapp.com" target="_blank">EaPassGen</a> — сгенерировать пароль, который
-                легко
-                запомнить;
+            <li>
+                <a href="https://eapassgen.herokuapp.com" target="_blank">EaPassGen</a> — сгенерировать пароль, который
+                легко запомнить
+                <details>
+                    <summary><a>...</a></summary>
+                    <b>Технологии:</b>
+                    <ul class="more">
+                        <li>
+                            <a href="http://flask.pocoo.org/">Flask</a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3.org/TR/html5/">HTML5</a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3.org/TR/CSS/">CSS3</a>
+                        </li>
+                    </ul>
+                </details>
             </li>
-            <li><a href="https://imgstore.herokuapp.com" target="_blank">ImgStore</a> — загрузить картинку;</li>
-            <li><a href="https://shortenit.herokuapp.com" target="_blank">ShortenIt</a> — укоротить ссылку любой длины;
+            <li>
+                <a href="https://imgstore.herokuapp.com" target="_blank">ImgStore</a> — загрузить картинку
+                <details>
+                    <summary><a>...</a></summary>
+                    <b>Технологии:</b>
+                    <ul class="more">
+                        <li>
+                            <a href="http://www.sinatrarb.com/">Sinatra</a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3.org/TR/html5/">HTML5</a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3.org/TR/CSS/">CSS3</a>
+                        </li>
+                        <li>
+                            <a href="https://www.mongodb.com/">MongoDB</a> — картинки хранятся прямо в базе данных
+                        </li>
+                    </ul>
+                </details>
             </li>
-            <li><a href="https://clpbrd.herokuapp.com" target="_blank">ClpBrd</a> — легко перекидывать текст между
-                устройствами;
+            <li>
+                <a href="https://shortenit.herokuapp.com" target="_blank">ShortenIt</a> — укоротить ссылку любой длины
+                <details>
+                    <summary><a>...</a></summary>
+                    <b>Технологии:</b>
+                    <ul class="more">
+                        <li>
+                            <a href="http://rubyonrails.org/">Rails</a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3.org/TR/html5/">HTML5</a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3.org/TR/CSS/">CSS3</a>
+                        </li>
+                        <li>
+                            <a href="https://jquery.com/">jQuery</a>
+                        </li>
+                    </ul>
+                </details>
             </li>
-            <li><a>...</a></li>
+            <li>
+                <a href="https://clpbrd.herokuapp.com" target="_blank">ClpBrd</a> — легко перекидывать текст между
+                устройствами
+                <details>
+                    <summary><a>...</a></summary>
+                    <b>Технологии:</b>
+                    <ul class="more">
+                        <li>
+                            <a href="https://nodejs.org/">Node.JS</a>
+                        </li>
+                        <li>
+                            <a href="http://socket.io/">Socket.IO</a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3.org/TR/html5/">HTML5</a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3.org/TR/CSS/">CSS3</a>
+                        </li>
+                        <li>
+                            <a href="https://jquery.com/">jQuery</a>
+                        </li>
+                    </ul>
+                </details>
+            </li>
         </ul>
 
         <p id="contact">
