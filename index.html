@@ -14,15 +14,15 @@
             font-family: 'PT Sans';
             src: url('PT Sans.eot');
             src: url('PT Sans.eot?#iefix') format('embedded-opentype'),
-                url('PT Sans.woff') format('woff'),
-                url('PT Sans.ttf') format('truetype'),
-                url('PT Sans.svg#pt_sansregular') format('svg');
+            url('PT Sans.woff') format('woff'),
+            url('PT Sans.ttf') format('truetype'),
+            url('PT Sans.svg#pt_sansregular') format('svg');
             font-weight: normal;
             font-style: normal;
 
         }
 
-        @keyframes opascity {
+        @keyframes opacity {
             0% {
                 opacity: 0;
             }
@@ -42,20 +42,21 @@
                 display: flex;
                 align-items: center;
             }
-            
+
             header {
                 width: 50%;
             }
 
             #contact:hover {
                 font-size: 145%;
-            }   
+            }
         }
 
         @media (max-width: 520px) {
             header {
                 float: right;
             }
+
             .vertical-line {
                 transform: translateY(25px) !important;
                 height: 0 !important;
@@ -79,7 +80,7 @@
 
         header h1 {
             opacity: 0;
-            animation: 1s opascity ease-out 2s forwards;
+            animation: 1s opacity ease-out 2s forwards;
         }
 
         body {
@@ -88,7 +89,7 @@
 
         @media (max-width: 520px) {
             body {
-                background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)) no-repeat / cover, url("acidforest.720.jpg") top center no-repeat;
+                background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)) no-repeat center / cover, url("acidforest.720.jpg") top center no-repeat;
             }
         }
 
@@ -107,7 +108,7 @@
             transform: translateY(2em);
 
             opacity: 0;
-            animation: 0.2s opascity ease-out 1s 5 forwards alternate;
+            animation: 0.2s opacity ease-out 1s 5 forwards alternate;
         }
 
         aside {
@@ -115,22 +116,22 @@
             transform: translateY(1.5em);
             align-self: flex-start;
             opacity: 0;
-            animation: 1s opascity ease-in 2s forwards;
+            animation: 1s opacity ease-in 2s forwards;
         }
 
         ul li:nth-child(3n + 1) {
-            opacity: 0 !important;
-            animation: 0.3s opascity ease-in 4s forwards alternate !important;
+            opacity: 0;
+            animation: 0.3s opacity ease-in 4s forwards alternate !important;
         }
 
         ul li:nth-child(3n) {
-            opacity: 0 !important;
-            animation: 0.2s opascity ease-in 3s forwards alternate !important;
+            opacity: 0;
+            animation: 0.2s opacity ease-in 3s forwards alternate !important;
         }
 
         ul li:nth-child(3n - 1) {
-            opacity: 0 !important;
-            animation: 0.1s opascity ease-in 5s forwards alternate !important;
+            opacity: 0;
+            animation: 0.1s opacity ease-in 5s forwards alternate !important;
         }
 
         ul.icn {
@@ -140,7 +141,7 @@
 
         ul.icn > li:before {
             font-family: "FontAwesome";
-            padding-right:7px;
+            padding-right: 7px;
         }
 
         li.phone:before {
@@ -189,45 +190,55 @@
             transition: all 0.1s ease-out;
 
             opacity: 0;
-            animation: 0.1s opascity ease 5s forwards 3 alternate;
+            animation: 0.1s opacity ease 5s forwards 3 alternate;
         }
 
         #caption {
             color: rgba(255, 255, 255, 0.6);
             opacity: 0;
-            animation: 0.1s opascity ease-in 4s forwards 5 alternate;
+            animation: 0.1s opacity ease-in 4s forwards 5 alternate;
         }
     </style>
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>Оптимизируй. Действуй. Упрощай.</h1>
-            <p id="caption">Я художник, я так вижу.</p>
-        </header>
-        <div class="vertical-line"></div>
-        <aside>
-            <p>Так вот...</p>
-            <p>Часто <small>(нет)</small> бывают ситуации, для которых я сделал пару сайтов, где можно...</p>
+<div class="wrapper">
+    <header>
+        <h1>Оптимизируй. Действуй. Упрощай.</h1>
+        <p id="caption">Я художник, я так вижу.</p>
+    </header>
+    <div class="vertical-line"></div>
+    <aside>
+        <p>Так вот...</p>
+        <p>Часто
+            <small>(нет)</small>
+            бывают ситуации, для которых я сделал пару сайтов, где можно...
+        </p>
 
-            <ul>
-                <li>
-                    <a href="https://isitdown.herokuapp.com" target="_blank">IsItDown?</a> — убедиться, что сайт не работает
-                    у всех;</li>
-                <li><a href="https://eapassgen.herokuapp.com" target="_blank">EaPassGen</a> — сгенерировать пароль, который легко
-                    запомнить;
-                </li>
-                <li><a href="https://imgstore.herokuapp.com" target="_blank">ImgStore</a> — загрузить картинку;</li>
-                <li><a href="https://shortenit.herokuapp.com" target="_blank">ShortenIt</a> — укоротить ссылку любой длины;</li>
-                <li><a href="https://clpbrd.herokuapp.com" target="_blank">ClpBrd</a> — легко перекидывать текст между устройствами;</li>
-                <li><a>...</a></li>
-            </ul>
+        <ul>
+            <li>
+                <a href="https://isitdown.herokuapp.com" target="_blank">IsItDown?</a> — убедиться, что сайт не работает
+                у всех;
+            </li>
+            <li><a href="https://eapassgen.herokuapp.com" target="_blank">EaPassGen</a> — сгенерировать пароль, который
+                легко
+                запомнить;
+            </li>
+            <li><a href="https://imgstore.herokuapp.com" target="_blank">ImgStore</a> — загрузить картинку;</li>
+            <li><a href="https://shortenit.herokuapp.com" target="_blank">ShortenIt</a> — укоротить ссылку любой длины;
+            </li>
+            <li><a href="https://clpbrd.herokuapp.com" target="_blank">ClpBrd</a> — легко перекидывать текст между
+                устройствами;
+            </li>
+            <li><a>...</a></li>
+        </ul>
 
-            <p id="contact"><small>Если тоже хочешь сайт, пиши на e-mail: <a href="mailto:niki-timofe@ya.ru">niki-timofe[at]ya.ru</a>,
-                либо ВК: <a href="http://vk.com/id8930220" target="_blank">@id8930220</a></small></p>
-        </aside>
-    </div>
+        <p id="contact">
+            <small>Если тоже хочешь сайт, пиши на e-mail: <a href="mailto:niki-timofe@ya.ru">niki-timofe[at]ya.ru</a>,
+                либо ВК: <a href="http://vk.com/id8930220" target="_blank">@id8930220</a></small>
+        </p>
+    </aside>
+</div>
 </body>
 
 </html>
